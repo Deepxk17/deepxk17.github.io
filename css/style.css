@@ -2,19 +2,26 @@
 /* Modern Monochrome Portfolio CSS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-:root{
- --bg:#111315;
- --surface:#181B1F;
- --card:#20242A;
- --card-hover:#2A3038;
- --heading:#FFFFFF;
- --text:#ECECEC;
- --paragraph:#B7BDC5;
- --muted:#8B949E;
- --border:#343A40;
- --radius:18px;
- --shadow:0 15px 40px rgba(0,0,0,.45);
- --transition:.35s ease;
+:root {
+  /* Dark Mode Backgrounds & Surfaces (Built from the palette's deepest shades) */
+  --bg: #212529;         /* Shadow Grey - Deep, premium dark canvas */
+  --surface: #343A40;    /* Gunmetal - Slightly lighter dark for structural sections */
+  --card: #495057;       /* Iron Grey - Provides distinct, elegant container definition */
+  --card-hover: #6C757D; /* Slate Grey - Subtle, visible lift when interacting with elements */
+
+  /* Crisp Typography (High contrast using the light steel tones) */
+  --heading: #F8F9FA;    /* Bright Snow - Pure, glowing contrast for titles */
+  --text: #E9ECEF;       /* Platinum - Highly readable soft white for primary body text */
+  --paragraph: #DEE2E6;  /* Alabaster Grey - Slightly relaxed gray to avoid eye strain on longer reads */
+  --muted: #CED4DA;      /* Pale Slate - Perfect for minor captions, tags, and dates */
+
+  /* Structural Details */
+  --border: #495057;     /* Iron Grey - A clean, subtle divider that doesn't scream for attention */
+  
+  /* Layout Polish */
+  --radius: 18px;
+  --shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Deep, rich shadow to separate overlapping layers */
+  --transition: .35s ease;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}

@@ -1,1 +1,106 @@
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ========================================== */
+@media (max-width: 768px) {
+  
+  /* 1. Global Section Reset */
+  main section {
+    padding: 60px 20px !important;
+  }
 
+  /* 2. Navigation / Header */
+  .navbar {
+    padding: 15px 20px !important;
+  }
+  
+  /* If you don't have a JavaScript toggle for the hamburger menu yet, 
+     this ensures the links wrap nicely on smaller screens */
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+  }
+
+  /* 3. Hero Section (#home) */
+  /* Stacks the text and image vertically and centers everything */
+  #home {
+    display: flex !important;
+    flex-direction: column-reverse !important; 
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 30px !important;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Scale down the typography so it doesn't break awkwardly */
+  #home h1 {
+    font-size: 2.6rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #home h2 {
+    font-size: 1.8rem !important;
+  }
+
+  /* Stack the hero action buttons vertically */
+  .hero-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .hero-buttons .btn, 
+  .hero-buttons .btn-secondary {
+    width: 80% !important;
+    text-align: center !important;
+  }
+
+  /* Handle the profile picture sizing */
+  .hero-right img {
+    max-width: 250px !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 50%; /* Keeps it a neat circle if intended */
+  }
+
+  /* 4. About Section */
+  .about-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .about-info {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  /* 5. Services Section (My Expertise) */
+  /* Forces the 3 columns (Web Dev, Graphic Design, Video Editing) into a single column stack */
+  .services-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+/* Extra optimization for extra small screens (Phones under 480px wide) */
+@media (max-width: 480px) {
+  #home h1 {
+    font-size: 2.1rem !important;
+  }
+  
+  .hero-right img {
+    max-width: 200px !important;
+  }
+}

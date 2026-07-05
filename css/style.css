@@ -440,3 +440,11 @@ footer{
     min-height: 200px !important;
   }
 }
+/* ==========================================
+   HEADER LOGO BAR OVERLAY FIX
+   ========================================== */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 140px !important; /* Gives the profile picture plenty of space below the header */
+  }
+}

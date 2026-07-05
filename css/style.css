@@ -1,5 +1,5 @@
 /* Modern Monochrome Portfolio CSS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   /* Dark Mode Backgrounds & Surfaces */
@@ -331,4 +331,78 @@ footer{
 }
 
 /* ==========================================
-   TABLET & LAPTOP ADAPTABILITY (Under 992
+   TABLET & LAPTOP ADAPTABILITY (Under 992px)
+   ========================================== */
+@media (max-width: 992px) {
+  .nav-links { display: none !important; }
+  .menu-btn { display: block; }
+  
+  #home {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 100px;
+  }
+  
+  .hero-left h1 { font-size: 4.5rem; }
+  .hero-buttons, .socials { justify-content: center; }
+  .hero-right img { width: 280px; height: 280px; }
+  
+  .about-container { grid-template-columns: 1fr; gap: 40px; }
+  .services-grid { grid-template-columns: 1fr; gap: 25px; }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE ADAPTABILITY (Under 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  section, #about, #services { padding: 60px 5% !important; }
+  .hero-left { min-width: 100% !important; }
+  
+  .hero-left h1 { 
+    font-size: 2.8rem !important; 
+    line-height: 1.2 !important; 
+  }
+  .hero-left h2 { font-size: 1.8rem !important; }
+  .section-heading h2 { font-size: 2.2rem !important; }
+
+  .about-container { grid-template-columns: 1fr !important; }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-content {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .service-card { width: 100% !important; }
+}
+
+/* ==========================================
+   SMALL SMARTPHONE OPTIMIZATION (Under 576px)
+   ========================================== */
+@media (max-width: 576px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .btn, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-left h1 { font-size: 2.4rem !important; }
+}

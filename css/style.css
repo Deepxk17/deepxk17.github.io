@@ -356,12 +356,12 @@ footer{
     gap: 40px;
   }
   
+  /* Change grid columns to 1 column layout for tablets and below */
   .services-grid{
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     gap: 25px;
   }
 }
-
 /* ==========================================
    MOBILE RESPONSIVE ADAPTABILITY (Under 768px)
    ========================================== */
@@ -370,20 +370,13 @@ footer{
     padding: 60px 5% !important; 
   }
 
-  /* Force elements to fit within the viewport bounds safely */
-  #home, .about-container, .services-grid {
-    width: 100% !important;
-    max-width: 100vw !important;
-    overflow: hidden !important;
-  }
-
   .hero-left h1 {
-    font-size: 2.6rem !important; /* Dynamically scales down your name layout */
+    font-size: 3rem !important; 
     line-height: 1.2 !important;
   }
   
   .hero-left h2 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
   
   .section-heading h2 {
@@ -403,6 +396,10 @@ footer{
     border-top: 1px solid rgba(255,255,255,.08);
   }
   
+  .service-card {
+    width: 100% !important;
+  }
+}
   /* Stack the skill cards cleanly in a vertical layout */
   .services-grid {
     display: flex !important;

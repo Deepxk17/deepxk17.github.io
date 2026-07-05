@@ -443,3 +443,20 @@ footer{
     min-height: 200px !important;
   }
 }
+/* ==========================================
+   EDUCATION & LOCATION CENTER FIX (Mobile)
+   ========================================== */
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .card-content {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}

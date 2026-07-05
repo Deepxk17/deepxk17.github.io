@@ -301,15 +301,21 @@ header{
     backdrop-filter:blur(15px);
 }
 
-.service-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-    border-color:rgba(255,255,255,.18);
+.service-card i {
+    font-size: 55px;
+    margin-bottom: 30px;
+    transition: var(--transition); 
 }
 
-.service-card i{
-    font-size:55px;
-    margin-bottom:30px;
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(139, 124, 247, 0.15); 
+    border-color: #8b7cf7; 
+}
+
+.service-card:hover i {
+    color: #8b7cf7; 
+    transform: scale(1.15); 
 }
 
 .service-card h3{
@@ -448,15 +454,26 @@ footer{
    ========================================== */
 @media (max-width: 768px) {
   .info-card {
+    display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
+    width: 100% !important; /* Forces the card to span full width */
+    margin: 0 auto !important; /* Centers the card within its container */
   }
   
+  .card-icon {
+    margin: 0 auto !important; /* Forces the icon perfectly to the center */
+  }
+
   .card-content {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding-left: 0 !important;
   }
 }

@@ -38,9 +38,6 @@ ul{list-style:none;}
 section {
   min-height: 100vh;
   padding: 100px 8%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   scroll-margin-top: 80px;
 }
 

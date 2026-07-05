@@ -721,3 +721,77 @@ footer{
     height: 200px;
   }
 }
+
+/* ==========================================
+   MODERN ACHIEVEMENTS GRID
+   ========================================== */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.03); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    height: 100%;
+}
+
+/* Hover Effect */
+.achievement-card:hover {
+    background: rgba(139, 124, 247, 0.05);
+    border-color: #8b7cf7; /* Your purple accent */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(139, 124, 247, 0.1);
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(139, 124, 247, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.achievement-icon i {
+    font-size: 24px;
+    color: #8b7cf7;
+}
+
+/* Icon change on hover */
+.achievement-card:hover .achievement-icon {
+    background: #8b7cf7;
+}
+.achievement-card:hover .achievement-icon i {
+    color: #fff;
+}
+
+.achievement-info h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.achievement-info p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
